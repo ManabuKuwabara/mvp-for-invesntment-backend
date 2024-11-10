@@ -5,4 +5,4 @@ python-docx==0.8.11         # Wordドキュメントの読み取り
 python-dotenv==1.0.0        # .envファイルから環境変数の読み込み
 Cython==0.29.36
 scikit-learn==1.1.3         # TF-IDFとコサイン類似度の計算(1.
-python-3.11.3
+python-3.10.12  
