@@ -1,0 +1,6 @@
+fastapi==0.108.0            # FastAPIのフレームワーク
+uvicorn==0.25.0             # ASGIサーバー
+openai==0.28.0              # OpenAI APIクライアント
+python-docx==0.8.11         # Wordドキュメントの読み取り
+python-dotenv==1.0.0        # .envファイルから環境変数の読み込み
+scikit-learn==1.2.2         # TF-IDFとコサイン類似度の計算
