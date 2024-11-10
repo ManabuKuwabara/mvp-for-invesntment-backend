@@ -76,7 +76,7 @@ async def summarize_preset_file(industry: str = Query(None)):
     logging.info(f"Received industry parameter: {industry}")
 
     try:
-        file_path = f"{industry}.docx"  # 選択した業界名に基づいてファイルパスを設定
+        file_path =  f"app/{industry}.docx"  # 選択した業界名に基づいてファイルパスを設定
 
         # ファイルの存在確認
         if not os.path.exists(file_path):
