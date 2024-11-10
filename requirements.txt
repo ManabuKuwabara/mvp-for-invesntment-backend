@@ -241,7 +241,7 @@ protobuf==4.25.1
 psutil==5.9.5
 pulsar-client==3.4.0
 pure-eval==0.2.2
-pyarrow==12.0.1
+pyarrow
 pyasn1==0.5.1
 pyasn1-modules==0.3.0
 PyAudio==0.2.13
