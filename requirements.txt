@@ -21,7 +21,6 @@ asyncer==0.0.2
 attrs==23.2.0
 audio-recorder-streamlit==0.0.8
 auth0-python==4.3.0
-av==10.0.0
 Babel==2.12.1
 backcall==0.2.0
 backoff==2.2.1
