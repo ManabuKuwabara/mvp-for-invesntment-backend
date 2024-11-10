@@ -11,14 +11,18 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
+# Vercelフロントエンドのドメインを追加
+origins = [
+    "https://mvp-for-invesntment-frontend.vercel.app"  # Vercelのドメイン
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # フロントエンドのオリジンに置き換え
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
 
 # .envファイルの内容を読み込み
 # load_dotenv()→本番環境はHerokuの環境変数を使用
