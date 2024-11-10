@@ -21,7 +21,7 @@ app.add_middleware(
 
 
 # .envファイルの内容を読み込み
-load_dotenv()
+# load_dotenv()→本番環境はHerokuの環境変数を使用
 
 # APIキーを取得
 openai.api_key = os.getenv("OPENAI_API_KEY")
