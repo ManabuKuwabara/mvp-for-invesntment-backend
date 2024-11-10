@@ -13,12 +13,12 @@ app = FastAPI()
 
 # Vercelフロントエンドのドメインを追加
 origins = [
-    "https://mvp-for-investment-frontend.vercel.app"  # Vercelのドメイン
+    "https://mvp-for-investment-frontend.vercel.app"
 ]
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
+    allow_origins=origins,  # 全てのオリジンを許可する場合は ["*"]
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
