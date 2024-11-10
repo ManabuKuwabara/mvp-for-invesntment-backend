@@ -80,6 +80,7 @@ async def summarize_preset_file(industry: str = Query(None)):
 
         # ファイルの存在確認
         if not os.path.exists(file_path):
+            logging.error(f"File not found: {file_path}")  # ファイルパスをログに出力
             raise HTTPException(status_code=404, detail="指定されたファイルが見つかりません。")
 
         # ドキュメント全体の内容を取得し、段落ごとに分割
